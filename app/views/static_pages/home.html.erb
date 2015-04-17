@@ -1,0 +1,38 @@
+<%= form_for :user do |u| %>
+  <p>
+    <%= u.label :title %><br>
+    <%= u.text_field :title %>
+  </p>
+
+  <p>
+    <%= u.label :description %><br>
+    <%= u.text_field :description %>
+  </p>
+    
+  <p> <%= u.label :back_ground_color %><br>
+    <select name="back-ground" id="bgcolor">
+  		<option value="1">Orange</option>
+  		<option value="2">Green</option>
+  		<option value="3">Blue</option>
+  		<option value="4">Pink</option>
+  		<option value="5">Yellow</option>
+  		<option value="6">White</option>
+	</select>
+  </p>
+
+  <p>
+    <%= u.label :font %><br>
+    <select name="font" id="font">
+  		<option value="1">Times new Roman</option>
+  		<option value="2">Calibri</option>
+  		<option value="3">fantasy</option>
+  		<option value="4">serif</option>
+	</select>
+  </p>
+ <br >
+  <p>
+    <%= u.submit %>
+  </p>
+
+<% end %>
+

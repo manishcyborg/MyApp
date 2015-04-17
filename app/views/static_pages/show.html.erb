@@ -1,0 +1,4 @@
+content_tag(:span, "", :style => "background-color:#{current_user.font_color.nil? ? '#FFFFFF' : current_user.font_color}")
+
+
+<div class="blah" style="<%= 'background-color : #{user.backgroundcolor};' unless user.backgroundcolor.nil? %>
